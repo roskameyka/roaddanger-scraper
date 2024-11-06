@@ -2,4 +2,4 @@
 
 ## Schematics
 
-![alt text](image.png)
+![alt text](doc/image.png)

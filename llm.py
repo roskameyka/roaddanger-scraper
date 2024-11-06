@@ -4,9 +4,9 @@ from keys import *
 import ollama
 
 
-async def makeCompute(messages: list, model: str = "llama3.2", local: bool =True):
+def makeCompute(messages: list, model: str = "llama3.2", local: bool =True):
   if not local:
-    response =  await requests.post(
+    response =  requests.post(
       url="https://openrouter.ai/api/v1/chat/completions",
       headers={
         "Authorization": f"Bearer {OPENROUTER_API_KEY}",
@@ -26,7 +26,7 @@ async def makeCompute(messages: list, model: str = "llama3.2", local: bool =True
     else:
         print(f"Request failed with status code {response.status_code}: {response.text}")
   else:
-    result = await ollamaMakeComute(messages=messages, model=model)
+    result = ollamaMakeComute(messages=messages, model=model)
     return result['message']['content']
 def ollamaMakeComute(messages: list, model: str = "llama3.2"):
   return  ollama.chat(model=model, messages=messages)
