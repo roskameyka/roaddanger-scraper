@@ -1,4 +1,4 @@
-### Dehumanising detector
+### Dehumanising detectors
 
 ## Schematics
 
