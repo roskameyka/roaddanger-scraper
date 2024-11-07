@@ -1,2 +1,4 @@
 supabase
 ollama
+crewai
+openai
