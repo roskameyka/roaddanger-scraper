@@ -6,7 +6,7 @@
 
 
 
-
+## I hate David :*
 ## TODO
  - Implement suprabase
  - Implement telegram bot (https://python-telegram-bot.org/)
